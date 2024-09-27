@@ -3,7 +3,7 @@ import cv2
 from  fasterrcnn_model import model,preprocess,weights
 import torch
 #  Video Capture
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture('cars.mp4')
 while True:
     ret, frame = cap.read()
     if ret == True:
